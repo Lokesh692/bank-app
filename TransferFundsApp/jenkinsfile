@@ -1,0 +1,25 @@
+pipeline{
+	agent any
+     stages {
+   			stage('clean stage'){
+   			 steps{
+   			 	dir("TransferFund"){
+   			 	
+   			 	}
+   			}
+   		}
+   		stage('Compile stage'){
+   			steps{
+   				dir("TransferFund"){
+   					
+   					}
+   				}
+   			}
+   		stage('Install stage'){
+   			steps{
+   				dir("TransferFund"){
+   				
+   				}
+   			}
+   		}
+   	}
