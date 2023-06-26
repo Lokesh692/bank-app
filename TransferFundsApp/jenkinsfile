@@ -1,24 +1,24 @@
 pipeline{
 	agent any
-     stages {
+     stages{
    			stage('clean stage'){
    			 steps{
    			 	dir("TransferFund"){
-   			 	
+   			 		bat 'C:\\apache-maven-3.6.3\\bin\\mvn clean'
    			 	}
    			}
    		}
    		stage('Compile stage'){
    			steps{
    				dir("TransferFund"){
-   					
+   					bat 'C:\\apache-maven-3.6.3\\bin\\mvn complile'
    					}
    				}
    			}
    		stage('Install stage'){
    			steps{
    				dir("TransferFund"){
-   				
+   					bat 'C:\\apache-maven-3.6.3\\bin\\mvn install'
    				}
    			}
    		}
